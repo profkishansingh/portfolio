@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  height: 15vh;
+  width: 100%;
+  background-color: crimson;
+}
+#nav {
+  justify-content: space-around;
+}
+.left_nav {
+  width: 30%;
+  justify-content: space-evenly;
+}
+.right_nav {
+  width: 50%;
+  height: 100%;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+/* Navbar links */
+a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 18px;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (smooth + modern) */
+a:hover {
+  color: #2ecc71;
+}
+
+/* Underline animation */
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2ecc71;
+  transition: 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+#nav_menu {
+  justify-content: space-evenly;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+}
+
+/* Left Content */
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button */
+.btn {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+
+/* Right Image */
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+}
+/* Footer */
+.footer {
+  background-color: #000;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.social-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Social Boxes */
+.social-box {
+  text-decoration: none;
+  color: #aaa;
+  border: 1px solid #222;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.social-box:hover {
+  color: #2ecc71;
+  border-color: #2ecc71;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
